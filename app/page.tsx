@@ -2,7 +2,7 @@ import { fetchCars } from "@utils";
 import { HomeProps } from "@types";
 import { fuels, yearsOfProduction } from "@constants";
 import { CarCard, ShowMore, SearchBar, CustomFilter, Hero } from "@components";
-
+export const dynamic = 'force-dynamic'
 export default async function Home({ searchParams }: HomeProps) {
   // to make next js automaticly fetch data when we change the type of car 
   const allCars = await fetchCars({
